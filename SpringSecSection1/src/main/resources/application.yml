@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: ${SPRING_APP_NAME:SpringSecSection1}
+  security:
+    user:
+      name: ${SECURITY_USERNAME:user}
+      password: ${SECURITY_PASSWORD:vansh@123}
+logging:
+  pattern:
+    console: ${LOG_PATTERN_CONSOLE:%green(%d{HH:mm:ss.SSS}) %blue(%-5level) %red([%thread]) %yellow(%logger{15}) - %msg%n}
+server:
+  port: ${SERVER_PORT:8081}
